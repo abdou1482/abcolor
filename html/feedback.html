@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impremerie Vitrine - Feedback</title>
+    <link rel="stylesheet" href="C:\Users\hp\Desktop\kiki\abcolor\css\styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script>
+        (function() {
+            emailjs.init('service_buxiush');
+        })();
+
+        function sendFeedback(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_buxiush', 'template_k5c855r', '#feedbackForm')
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Feedback submitted successfully!');
+                    document.getElementById('feedbackForm').reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        }
+    </script> -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JoR1WYi4Ksry9gh9u",
+      });
+      
+   })();
+   function sendFeedback(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_buxiush', 'template_k5c855r', '#feedbackForm')
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Feedback submitted successfully!');
+                    document.getElementById('feedbackForm').reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            }
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links active">
+                <li><a href="index.html">Summary</a></li>
+                <li><a href="products.html">Products & Qualities</a></li>
+                <li><a href="clients.html">Our Clients</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="media.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Feedback</h1>
+        <form class="feedback-form" id="feedbackForm" onsubmit="sendFeedback(event)">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            <div>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer-bar">
+        <div class="containers">
+            <p>📧 Email: abcolor@gmail.com  📞 Phone: (123) 456-7890   📍 Address: 123 Street Name,Elharrach, Alger,Algerie</p>        </div>
+    </footer>
+    <script src="C:\Users\hp\Desktop\kiki\abcolor\html\media.js"></script>
+</body>
+</html>

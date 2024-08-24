@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABColor - Imprimerie Industrielle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2A363B; /* Bleu pétrole */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #4B0082; /* Bleu pétrole */
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        footer {
+            background-color: #2A363B; /* Bleu pétrole */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .magenta {
+            color: #FF00FF; /* Magenta */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="magenta">ABColor - Imprimerie Industrielle</h1>
+        <p class="magenta">Votre partenaire pour tous vos besoins d'impression</p>
+    </header>
+    <nav>
+        <a href="#accueil" onclick="scrollToSection('accueil')">Accueil</a>
+        <a href="#services" onclick="scrollToSection('services')">Services</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="accueil" class="fade-in">
+            <h2 class="magenta">Bienvenue à ABColor</h2>
+            <p>ABColor est une imprimerie créée par un passionné de création et d’art graphique, comprenant en interne des moyens, outils et supports d’impression offset. Ainsi, des designers graphistes et machinistes offset diplômés des meilleures écoles d’art.</p>
+            <p>Le savoir-faire de notre équipe permet de vous apporter sa contribution à l’émergence et à l’excellence de votre entreprise. Nous vous proposons nos services avec une garantie de qualité à ses prestations. En contrôlant et maîtrisant nos temps de fabrication, nous sommes capables d'assurer des tarifs équitables.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
+                <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3">
+            </div>
+        </section>
+        <section id="services" class="fade-in">
+            <h2 class="magenta">Nos Services</h2>
+            <h3>L’EMBALLAGE EN PAPIER ET CARTON</h3>
+            <ul>
+                <li>Boîtes pliantes diverses</li>
+                <li>Conception d'emballages assistée par ordinateur</li>
+            </ul>
+            <h3>LES IMPRIMES DE COMMUNICATION</h3>
+            <ul>
+                <li>Brochures</li>
+                <li>Dépliant</li>
+                <li>Calendrier</li>
